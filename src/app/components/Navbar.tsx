@@ -1,6 +1,7 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import register from "../register/page";
 
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -41,8 +42,8 @@ export const Navbar = () => {
           <Link href={""} className="mx-2 hover:text-gray-400">
             Contact
           </Link>
-          <Link href={""} className="mx-2 hover:text-gray-400">
-            Login
+          <Link href={"/register"} className="mx-2 hover:text-gray-400">
+            Register
           </Link>
         </div>
         <div className="md:hidden flex items-center">
@@ -79,14 +80,14 @@ export const Navbar = () => {
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 24 24"
-                strokeWidth="2"
+                stroke-width="1.5"
                 stroke="currentColor"
                 className="w-6 h-6"
               >
                 <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M4 6h16M4 12h16m-7 6h7"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
                 />
               </svg>
             </button>
